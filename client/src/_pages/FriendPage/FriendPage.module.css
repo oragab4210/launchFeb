@@ -1,0 +1,267 @@
+.container0 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  /* background-color: #d6d3e5; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  width: 700px;
+  padding: 0px;
+  /* background-color: black; */
+  border: 1px solid white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px 4px rgb(0, 0, 0);
+}
+
+.container2 {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  /* padding: 10px; */
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+
+  /* border: 1px solid rgb(0, 0, 0); */
+}
+
+.listMoveIn {
+  animation: listMoveIn 0.4s ease-in-out forwards;
+}
+.listMoveOut {
+  animation: listMoveOut 0.4s ease-in-out forwards;
+}
+.chatMoveIn {
+  animation: chatMoveIn 0.4s ease-in-out forwards;
+}
+.chatMoveOut {
+  animation: chatMoveOut 0.4s ease-in-out forwards;
+}
+
+.FriendList {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  /* z-index: 1; */
+}
+
+.AddFriends {
+  left: 700px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  /* z-index: 1; */
+}
+@keyframes listMoveOut {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: -700px;
+  }
+}
+@keyframes listMoveIn {
+  0% {
+    left: -700px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes chatMoveOut {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 700px;
+  }
+}
+
+@keyframes chatMoveIn {
+  0% {
+    left: 700px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1000px) {
+  .container0 {
+    grid-column: 1/3;
+  }
+}
+
+@media only screen and (max-width: 718px) {
+  .container1 {
+    /* height: 600px; */
+    width: 600px;
+  }
+
+  @keyframes listMoveOut {
+    0% {
+      left: 0px;
+    }
+    100% {
+      left: -600px;
+    }
+  }
+  @keyframes listMoveIn {
+    0% {
+      left: -600px;
+    }
+    100% {
+      left: 0px;
+    }
+  }
+  @keyframes chatMoveOut {
+    0% {
+      left: 0px;
+    }
+    100% {
+      left: 600px;
+    }
+  }
+
+  @keyframes chatMoveIn {
+    0% {
+      left: 600px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+}
+@media only screen and (max-width: 618px) {
+  .container1 {
+    /* height: 500px; */
+    width: 500px;
+  }
+  @keyframes listMoveOut {
+    0% {
+      left: 0px;
+    }
+    100% {
+      left: -500px;
+    }
+  }
+  @keyframes listMoveIn {
+    0% {
+      left: -500px;
+    }
+    100% {
+      left: 0px;
+    }
+  }
+  @keyframes chatMoveOut {
+    0% {
+      left: 0px;
+    }
+    100% {
+      left: 500px;
+    }
+  }
+
+  @keyframes chatMoveIn {
+    0% {
+      left: 500px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 518px) {
+  .container1 {
+    /* height: 400px; */
+    width: 400px;
+  }
+  @keyframes listMoveOut {
+    0% {
+      left: 0px;
+    }
+    100% {
+      left: -400px;
+    }
+  }
+  @keyframes listMoveIn {
+    0% {
+      left: -400px;
+    }
+    100% {
+      left: 0px;
+    }
+  }
+  @keyframes chatMoveOut {
+    0% {
+      left: 0px;
+    }
+    100% {
+      left: 400px;
+    }
+  }
+
+  @keyframes chatMoveIn {
+    0% {
+      left: 400px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+}
+@media only screen and (max-width: 418px) {
+  .container1 {
+    /* height: 340px; */
+    width: 340px;
+  }
+  @keyframes listMoveOut {
+    0% {
+      left: 0px;
+    }
+    100% {
+      left: -340px;
+    }
+  }
+  @keyframes listMoveIn {
+    0% {
+      left: -340px;
+    }
+    100% {
+      left: 0px;
+    }
+  }
+  @keyframes chatMoveOut {
+    0% {
+      left: 0px;
+    }
+    100% {
+      left: 340px;
+    }
+  }
+
+  @keyframes chatMoveIn {
+    0% {
+      left: 340px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+}

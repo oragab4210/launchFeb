@@ -1,0 +1,42 @@
+.profilePicContainer {
+  position: absolute;
+  right: 169px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  padding: 1px;
+  /* opacity: 100%; */
+  border: 1px solid white;
+}
+.profilePic {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dropDownDecoy {
+  pointer-events: none;
+  position: absolute;
+  color: crimson;
+
+  left: -30%;
+  bottom: 0rem;
+  width: 6rem;
+  height: 2.2rem;
+  background-color: rgba(0, 255, 255, 0.116);
+  border: 2px solid red;
+}
+.imageDecoy {
+  position: absolute;
+  bottom: 0rem;
+  left: 14px;
+  width: 65px;
+  border-radius: 50%;
+  height: 4rem;
+  background-color: rgba(4, 52, 224, 0.534);
+  z-index: +11;
+}

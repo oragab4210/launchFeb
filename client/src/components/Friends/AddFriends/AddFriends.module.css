@@ -1,0 +1,238 @@
+.container {
+  /* background-color: #a40606;
+  background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%); */
+  background-color: transparent;
+  /* border: 1px solid white;
+  box-shadow: 0px 4px 10px 4px rgb(0, 0, 0); */
+  height: 700px;
+  width: 700px;
+  /* display: flex; 
+  justify-content: center; */
+  /* border-radius: 12px; */
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  /* display: grid;
+  grid-template-rows: 80px 1fr; */
+}
+
+/* -------------------------------------------------------------------------- */
+.seachContainer {
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+.seachContainer h3 {
+  text-shadow: 1px 2px 1px #00000088;
+  font-size: 1.8rem;
+  color: white;
+}
+.seachContainer input {
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  font-size: 1.4rem;
+  border-radius: 8px;
+  margin-left: 10px;
+  font-weight: bold;
+  width: 220px;
+  padding-left: 10px;
+  border: 1px solid white;
+  outline-style: none;
+}
+
+.backArrowContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-shadow: 1px 2px 1px #00000088;
+  text-shadow: none;
+
+  color: rgb(129, 128, 128);
+  position: absolute;
+  left: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+}
+
+.backArrow {
+  /* padding-top: 10px; */
+  font-size: 1.8rem;
+}
+.backArrowContainer p {
+  font-size: 14px;
+}
+
+.backArrowContainer:hover {
+  color: rgb(171, 171, 171);
+}
+/* -------------------------------------------------------------------------- */
+
+.cardsListContainer {
+  /* background-color: rgb(106, 160, 95); */
+  height: 100%;
+  overflow: scroll;
+  display: flex;
+  justify-content: center;
+}
+.cardsListContainerCenter {
+  /* background-color: rgb(193, 26, 171); */
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-auto-rows: 200px;
+  grid-gap: 10px 10px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
+.userProfilePic {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.userCard {
+  /* background-color: #bdd4e7;
+  background-image: linear-gradient(315deg, #a5baca 0%, #6a7486 74%); */
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  height: 100%;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: 1fr 4rem;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.userCard:hover {
+  /* cursor: pointer; */
+
+  /* transform: scale(1.02); */
+}
+
+.buttonContainer {
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addFriendButton {
+  cursor: pointer;
+  background-color: rgb(0, 106, 255);
+  border: none;
+  padding: 10px 24px;
+  border-radius: 16px;
+  color: white;
+  text-shadow: 1px 2px #00000088;
+  transition: 0.2s ease-in-out;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0px 4px 8px rgb(0, 0, 0), inset 0px 0px 1px 0px rgb(255, 255, 255);
+}
+
+.addFriendButton0:hover {
+  transform: scale(1.1);
+}
+
+.addedFriendButton {
+  width: 151.33px;
+  cursor: pointer;
+  background-color: rgb(105, 105, 105);
+  border: none;
+  padding: 10px 24px;
+  border-radius: 16px;
+  color: white;
+  text-shadow: 1px 2px #00000088;
+  transition: 0.2s ease-in-out;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0px 4px 8px rgb(0, 0, 0), inset 0px 0px 1px 0px rgb(255, 255, 255);
+}
+
+/* .addFriendButton:hover {
+  transform: scale(1.1);
+} */
+
+.nameEmailContainer {
+  font-size: 18px;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.name {
+  height: 32px;
+}
+.email {
+  font-size: 12px;
+  color: #939393;
+}
+
+/* -------------------------------------------------------------------------- */
+@media only screen and (max-width: 718px) {
+  .container {
+    /* height: 600px; */
+    width: 600px;
+  }
+
+  .cardsListContainerCenter {
+    grid-template-columns: repeat(3, 190px);
+  }
+}
+@media only screen and (max-width: 618px) {
+  .container {
+    /* height: 500px; */
+    width: 500px;
+  }
+  .cardsListContainerCenter {
+    grid-template-columns: repeat(2, 200px);
+  }
+  .seachContainer {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 518px) {
+  .container {
+    /* height: 400px; */
+    width: 400px;
+  }
+  .cardsListContainerCenter {
+    grid-template-columns: repeat(2, 190px);
+  }
+
+  .seachContainer input {
+    width: 180px;
+  }
+  .seachContainer h3 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 418px) {
+  .container {
+    /* height: 340px; */
+    width: 340px;
+  }
+  .cardsListContainerCenter {
+    grid-template-columns: repeat(2, 158px);
+  }
+}

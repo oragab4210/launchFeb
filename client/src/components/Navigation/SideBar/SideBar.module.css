@@ -1,0 +1,76 @@
+.container {
+  /* position: fixed; */
+  /* top: 4rem; */
+  /* width: 14.7rem; */
+  height: 100vh;
+  width: 6rem;
+  position: fixed;
+  /* background-color: rgb(255, 255, 255); */
+  background-color: #1fd1f9;
+  background-image: linear-gradient(230deg, #1fd1f9 0%, #b621fe 74%);
+
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #2d3436 0%, #d3d3d3 74%);
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+
+  /* color: rgb(255, 255, 255); */
+  border-top: rgb(255, 255, 255);
+  /* box-shadow: 6px 0px 12px rgb(0, 247, 255);
+  border-right: 1px solid white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.optionList {
+  height: 100%;
+  width: 100%;
+}
+.optionList li {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 3rem;
+  text-align: center;
+}
+.optionList li:first-child {
+  /* margin-top: 2rem; */
+}
+.option {
+  color: rgb(255, 255, 255);
+
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+
+  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0px 2px 4px #000000;
+}
+
+.option:hover {
+  /* background-color: black; */
+}
+
+.image {
+  width: 30%;
+  filter: invert(200%);
+  -webkit-filter: invert(100%);
+}
+/* -------------------------------------------------------------------------- */
+@media only screen and (max-width: 1000px) {
+  .active {
+  }
+  .open {
+    left: 0;
+  }
+}
