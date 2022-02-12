@@ -1,0 +1,213 @@
+.container {
+  height: 700px;
+  width: 700px;
+  /* background-color: rgb(255, 255, 255); */
+  /* border-radius: 12px; */
+  /* background-color: #a40606;
+  background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%); */
+  background-color: transparent;
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  overflow: hidden;
+  /* border: 1px solid white;
+  box-shadow: 0px 4px 10px 4px rgb(0, 0, 0); */
+}
+
+.titleContainer {
+  /* opacity: 50%; */
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+.titleContainer h3 {
+  text-shadow: 1px 2px 1px #00000088;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.backArrowContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-shadow: 1px 2px 1px #00000088;
+  text-shadow: none;
+  color: rgb(129, 128, 128);
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+}
+.backArrow {
+  /* padding-top: 10px; */
+  font-size: 1.8rem;
+}
+.backArrowContainer p {
+  font-size: 14px;
+}
+.backArrowContainer:hover {
+  color: rgb(171, 171, 171);
+}
+
+/* -------------------------------------------------------------------------- */
+.friendListContainer {
+  /* padding-top: 24px; */
+  height: 100%;
+  overflow: scroll;
+}
+.friendListContainerCenter {
+  padding-top: 24px;
+  /* background-color: rgb(71, 80, 255); */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 10px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  /* height: 100%; */
+}
+.friendContainer {
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  width: calc(100% - 20px);
+  padding: 10px 0px;
+
+  height: 56px;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgb(0, 0, 0), inset 0px 0px 1px 0px rgb(255, 255, 255);
+}
+.friendContainer:first-child {
+}
+
+.friend:hover {
+  background-color: rgb(196, 196, 196);
+}
+
+/* -------------------------------------------------------------------------- */
+.nameEmailContainer {
+  font-size: 24px;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-shadow: 1px 1px 2px #000000;
+  position: relative;
+}
+
+.friendProfilePic {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: 10px;
+  margin-left: 16px;
+}
+
+.email {
+}
+
+.buttons {
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.startChat,
+.delete,
+.chatStarted {
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  padding: 10px 10px;
+  border-radius: 16px;
+  color: white;
+  text-shadow: 1px 2px #00000088;
+  transition: 0.2s ease-in-out;
+  border: 1px solid rgb(255, 255, 255);
+  /* box-shadow: 0px 0px 10px 4px rgb(255, 255, 255),
+    inset 0px 0px px 0px rgb(255, 255, 255); */
+}
+.startChat {
+  background-color: rgb(0, 106, 255);
+  background-color: #0abcf9;
+  background-image: linear-gradient(315deg, #0abcf9 0%, #2c69d1 74%);
+  margin-right: 10px;
+}
+.chatStarted {
+  background-color: #2f4353;
+  background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+
+  margin-right: 10px;
+}
+
+.delete {
+  background-color: #eb4511;
+  background-image: linear-gradient(315deg, #eb4511 0%, #b02e0c 74%);
+  margin-right: 0.5rem;
+  margin-left: 0.2rem;
+}
+
+.startChat:hover,
+.delete:hover {
+  transform: scale(1.08);
+}
+/* -------------------------------------------------------------------------- */
+
+.online,
+.offline {
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  left: 60px;
+  bottom: 0px;
+}
+.online {
+  background-color: rgb(51, 255, 0);
+}
+.offline {
+  background-color: rgb(101, 101, 101);
+}
+
+/* -------------------------------------------------------------------------- */
+@media only screen and (max-width: 718px) {
+  .container {
+    /* height: 600px; */
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 618px) {
+  .container {
+    /* height: 500px; */
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 518px) {
+  .container {
+    /* height: 400px; */
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 418px) {
+  .container {
+    /* height: 340px; */
+    width: 340px;
+  }
+}

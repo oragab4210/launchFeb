@@ -1,0 +1,56 @@
+.profileDropdownContainer {
+  position: absolute;
+  /* right: 20rem; */
+  top: -12rem;
+  right: 17rem;
+  background-color: rgb(227, 18, 18);
+  padding: 10px;
+  transition: all 0.5s;
+  width: 10rem;
+  height: 10rem;
+  overflow: hidden;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  z-index: +1;
+  height: 4rem;
+}
+.profileDropdownList {
+  transition: all 0.5s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.option {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.deactivated {
+  animation: menuMoveUp 0.9s ease-in-out forwards;
+}
+
+.active {
+  animation: menuMoveDown 0.2s ease-in-out forwards;
+}
+@keyframes menuMoveUp {
+  0% {
+    top: 0rem;
+  }
+  100% {
+    top: -12rem;
+  }
+}
+
+@keyframes menuMoveDown {
+  0% {
+  }
+
+  100% {
+    top: 0rem;
+  }
+}

@@ -1,0 +1,278 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 50px 2fr 50px;
+}
+
+.noRoomMessageContainer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #ffffff;
+}
+
+.friendNameContainer {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  height: 100%;
+  /* color: rgb(0, 0, 0); */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  z-index: +1;
+  font-size: 18px;
+  padding: 4px 0px;
+  position: relative;
+}
+.online,
+.offline {
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  right: 24px;
+}
+.online {
+  background-color: rgb(51, 255, 0);
+}
+.offline {
+  background-color: rgb(101, 101, 101);
+}
+/* -------------------------------------------------------------------------- */
+.messageContainer {
+  background-color: rgb(56, 56, 56);
+  /* background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%); */
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+  /* background-color: #a40606;
+  background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%); */
+  background-color: transparent;
+}
+
+/* -------------------------------------------------------------------------- */
+.messageList {
+  overflow-y: scroll;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+}
+.msg {
+  color: rgb(255, 255, 255);
+  /* text-shadow: 0px 2px 5px #000000; */
+  font-weight: bold;
+  font-size: 1.6rem;
+  width: fit-content;
+  max-width: 70%;
+  border-radius: 50px;
+  padding: 6px 24px;
+  margin-bottom: 1.5rem;
+  overflow: scroll;
+  display: flex;
+  align-items: center;
+}
+
+.red {
+  color: rgb(255, 255, 255);
+  background-color: #fe4747;
+  margin-right: auto;
+  margin-left: 2rem;
+  text-shadow: 0px 2px 4px #000000;
+  box-shadow: 0px 2px 6px #000000;
+  border: 2px solid #ffffff;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #a1adc0 0%, #cdcecf 74%);
+  background-color: #5b6467;
+  background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+  background-color: #eb4511;
+  background-image: linear-gradient(315deg, #eb4511 0%, #b02e0c 74%);
+}
+.blue {
+  text-shadow: 0px 2px 5px #000000;
+  background-color: rgb(17, 0, 255);
+  background-color: #ffeaa7;
+  background-image: linear-gradient(315deg, #ffeaa7 0%, #000000 74%);
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  background-color: #0abcf9;
+  background-image: linear-gradient(315deg, #0abcf9 0%, #2c69d1 74%);
+  margin-left: auto;
+  margin-right: 2rem;
+  box-shadow: 0px 2px 6px rgb(0, 0, 0);
+  border: 2px solid #ffffff;
+}
+/* -------------------------------------------------------------------------- */
+.inputBtnContainer {
+  border-top: 2px solid white;
+  position: absolute;
+  display: flex;
+  background-color: rgb(175, 175, 175);
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  padding: 12px 0px;
+  width: 100%;
+  height: 7-px;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+}
+
+button {
+  font-size: 1.2rem;
+  border: 1px solid rgb(138, 138, 138);
+  border-radius: 6px;
+  font-weight: bold;
+
+  border: 1px solid grey;
+}
+.inputBtnContainer input {
+  height: 50px;
+  width: 30rem;
+  padding-left: 1rem;
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+
+  font-size: 1.4rem;
+  border-radius: 8px;
+  margin-left: 10px;
+  font-weight: bold;
+  padding-left: 10px;
+  border: 1px solid rgb(125, 125, 125);
+  outline-style: none;
+  box-shadow: 0px 4px 8px rgb(0, 0, 0), inset 0px 0px 1px 0px rgb(255, 255, 255);
+}
+.inputBtnContainer button {
+  cursor: pointer;
+  background-color: rgb(0, 106, 255);
+  margin-left: 6px;
+  height: 50px;
+  padding: 0px 1.5rem;
+  color: white;
+  background-color: #166fe5;
+  border: 1px solid white;
+  box-shadow: 0px 4px 8px rgb(0, 0, 0), inset 0px 0px 1px 0px rgb(255, 255, 255);
+  border-radius: 12px;
+}
+.inputBtnContainer button:hover {
+  transform: scale(1.05);
+  background-color: rgb(1, 93, 223);
+}
+
+.backContainer {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 14px;
+  font-size: 1.5rem;
+  transition: 0.2s ease-in-out;
+  color: rgb(127, 127, 127);
+}
+.backContainer:hover {
+  transform: scale(1.05);
+  font-weight: bold;
+  color: rgb(180, 180, 180);
+}
+.backArrow {
+  /* position: relative; */
+  padding-top: 10px;
+  font-size: 2rem;
+}
+.backArrow p {
+  top: -14px;
+  font-size: 1.2rem;
+  position: absolute;
+}
+.backArrow span {
+  top: 4px;
+  left: 10px;
+  font-size: 1.6rem;
+  position: absolute;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 718px) {
+  .inputBtnContainer input {
+    width: 28rem;
+  }
+}
+@media only screen and (max-width: 618px) {
+  .inputBtnContainer input {
+    width: 22rem;
+  }
+}
+
+@media only screen and (max-width: 518px) {
+  .red {
+    margin-left: 1rem;
+  }
+  .blue {
+    margin-right: 1rem;
+  }
+  .inputBtnContainer button {
+    margin-right: 13px;
+  }
+  .inputBtnContainer input {
+    width: 16rem;
+  }
+  .backArrow {
+    padding-top: 10px;
+    font-size: 1.6rem;
+  }
+  .backArrow p {
+    font-size: 0.9rem;
+  }
+  .backArrow p {
+    top: -14px;
+    left: -2px;
+    font-size: 1rem;
+    /* position: absolute; */
+  }
+  .backArrow span {
+    top: 2px;
+    left: 8px;
+    font-size: 1.2rem;
+    /* position: absolute; */
+  }
+  .friendNameContainer {
+    font-size: 14px;
+    padding: 4px 0px;
+  }
+}
+
+@media only screen and (max-width: 418px) {
+  .red {
+    margin-left: 0.5rem;
+  }
+  .blue {
+    margin-right: 0.5rem;
+  }
+  .inputBtnContainer input {
+    width: 12rem;
+  }
+  .friendNameContainer {
+    font-size: 12px;
+    padding: 4px 0px;
+  }
+}

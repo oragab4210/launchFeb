@@ -1,0 +1,125 @@
+.formContainer {
+  padding: 0%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  border: 1px solid white;
+  border-radius: 12px;
+  width: 396px;
+  padding: 24px;
+  box-shadow: 0px 4px 10px 4px rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  position: relative;
+}
+
+.title {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+}
+.title h1 {
+  padding: 1.4rem 0px;
+  text-shadow: 0px 0px 9px #000000;
+}
+
+/* -------------------------------------------------------------------------- */
+.LoadingSpinner {
+  /* background-color: hotpink; */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 35%;
+  left: 0;
+}
+.form {
+  padding: 2rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+  align-items: center;
+}
+.form label {
+  text-shadow: 0px 0px 10px #000000;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.form input {
+  font-weight: 700;
+  border: 1px solid rgba(128, 128, 128, 0.334);
+  border-radius: 6px;
+  height: 2.4rem;
+  padding-left: 10px;
+  margin-bottom: 1.4rem;
+  font-size: 1.2rem;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0px 4px 8px rgb(0, 0, 0), inset 0px 0px 1px 0px rgb(255, 255, 255);
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+
+  width: 364px;
+}
+
+.btnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.button {
+  border-radius: 6px;
+  height: 1.8rem;
+
+  display: flex;
+  align-items: center;
+
+  color: white;
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.login {
+  display: flex;
+  justify-content: center;
+  background-color: #166fe5;
+  padding: 1.2rem 8rem;
+  width: 364px;
+  border: 1px solid white;
+  box-shadow: 0px 4px 8px rgb(0, 0, 0), inset 0px 0px 1px 0px rgb(255, 255, 255);
+}
+
+.horizontalLine {
+  border: 1px solid rgba(152, 152, 152, 0.197);
+  margin: 1rem;
+  width: 10em;
+  border-radius: 10px;
+}
+.createNewAccount {
+  display: flex;
+  justify-content: center;
+  width: 194px;
+  background-color: #349e1f;
+  padding: 1.2rem 2rem;
+  margin-bottom: 1.6rem;
+  border: 1px solid white;
+  box-shadow: 0px 4px 8px rgb(0, 0, 0), inset 0px 0px 1px 0px rgb(255, 255, 255);
+  /* text-shadow: 0px 0px 14px #3e3e3e; */
+}
+
+@media only screen and (max-width: 412px) {
+  .formContainer {
+    width: 320px;
+  }
+  .form input {
+    width: 280px;
+  }
+  .login {
+    width: 280px;
+  }
+}

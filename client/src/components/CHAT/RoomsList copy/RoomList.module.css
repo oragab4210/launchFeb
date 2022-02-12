@@ -1,0 +1,82 @@
+.container {
+  width: 90%;
+  color: white;
+  height: 80vh;
+  background-color: rgb(40, 40, 40);
+  grid-row: 2/17;
+  grid-column: 1/4;
+  border-radius: 0px 10px 10px 0px;
+  display: grid;
+  grid-template-rows: repeat(10, 10%);
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 0px 12px rgb(0, 247, 255);
+  border: 1px solid white;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  /* background-color: red; */
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4vw;
+  height: 100%;
+}
+.roomList {
+  /* box-shadow: 5px 0px 10px rgba(255, 0, 0); */
+  text-align: center;
+  grid-row: 3/11;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  /* background-color: red; */
+}
+/* hr {
+  margin: 0;
+  width: 100%; */
+/* box-shadow: 5px 0px 10px rgb(0, 247, 255); */
+/* color: aqua;
+  box-shadow: 5px 0px 10px rgb(246, 45, 0); */
+/* } */
+.room {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7vw;
+  cursor: pointer;
+  border-bottom: 0.5px solid white;
+  box-shadow: 5px 0px 12px rgb(0, 247, 255);
+}
+
+.room:first-child {
+  border-top: 1px solid rgb(255, 0, 0);
+  box-shadow: 0px 0px 12px rgb(0, 254, 38);
+  /* box-shadow: 5px 0px 12px rgb(0, 247, 255); */
+  /* border-bottom: 0.5px solid white; */
+  /* box-shadow: -5px 0px 12px rgb(0, 8, 252); */
+}
+
+.room:hover {
+  background-color: rgb(53, 53, 53);
+}
+
+.selectedRoom {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 20px; */
+  background-color: rgb(38, 38, 38);
+  border-top: 0.5px solid white;
+  border-bottom: 0.5px solid white;
+  font-size: 0.75vw;
+  box-shadow: 5px 0px 12px rgb(255, 0, 0);
+  z-index: +1;
+}

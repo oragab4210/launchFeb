@@ -1,0 +1,120 @@
+.container {
+  background-color: rgb(98, 25, 234);
+  height: 100%;
+  /* width: 100%; */
+  /* z-index: -20; */
+}
+.profilePicContainer {
+  opacity: 50%;
+  position: absolute;
+  right: 113px;
+  bottom: -1px;
+  background-color: rgb(243, 19, 19);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 20px; */
+  height: 100%;
+  width: 150px;
+  padding: 0px 10px;
+  /* z-index: -20; */
+}
+.profilePic {
+  height: 55px;
+  width: 55px;
+  cursor: pointer;
+  position: absolute;
+  background-color: cyan;
+  border-radius: 50%;
+}
+
+/* -------------------------------------------------------------------------- */
+.profileDropdownContainer1 {
+}
+.profileDropdownContainer {
+  padding: 10px 0px;
+  transition: all 0.5s;
+  position: absolute;
+  width: 300px;
+  height: 10rem;
+
+  top: -15rem;
+  right: 36px;
+  overflow: hidden;
+  background-color: #5b6467;
+  background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+  z-index: -1000;
+  margin-top: 4rem;
+
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #2d3436 0%, #d3d3d3 74%);
+  background-color: #a40606;
+  background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+  padding: 8px;
+  padding-top: 0px;
+  border: 1px solid white;
+
+  /* border: 1px solid rgb(255, 255, 255); */
+  /* box-shadow: inset 0px 0px 1px 4px rgb(221, 221, 221),
+    inset 0px 0px 1px 5px rgb(0, 0, 0); */
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-shadow: 0px 4px 10px 4px rgb(0, 0, 0);
+}
+.profileDropdownContainer1 {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  height: 100%;
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #2d3436 0%, #d3d3d3 74%);
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+}
+.profileDropdownList {
+  transition: all 0.5s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.option {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+  text-shadow: 0px 4px 4px rgb(1, 1, 1);
+  transition: 0.2s ease-in-out;
+}
+
+.option:hover {
+}
+
+.deactivated {
+  animation: menuMoveUp 0.5s forwards;
+}
+@keyframes menuMoveUp {
+  0% {
+    top: 0rem;
+  }
+  100% {
+    top: -15rem;
+  }
+}
+.active {
+  animation: menuMoveDown 0.5s forwards;
+}
+
+@keyframes menuMoveDown {
+  10% {
+    top: -15rem;
+  }
+  50% {
+  }
+  50% {
+  }
+  100% {
+    top: 0rem;
+  }
+}
