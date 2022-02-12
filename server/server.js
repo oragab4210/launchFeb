@@ -25,6 +25,7 @@ const io = socketIO(server, {
     origin: "*",
   },
 });
+io.origins("*:*");
 
 /* ------------------------------- Mongo Setup ------------------------------ */
 const MONGO_URI = process.env.MONGO_URI;
