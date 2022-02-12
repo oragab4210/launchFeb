@@ -35,7 +35,9 @@ const useChatRoom = () => {
   }, [room, hashRoom]);
   /* -------------------------------------------------------------------------- */
   useEffect(() => {
-    socketRef.current = socketIOClient(SOCKET_SERVER_URL);
+    socketRef.current = socketIOClient(SOCKET_SERVER_URL, {
+      transports: ["websocket"],
+    });
 
     if (hashRoom !== undefined) {
       socketRef.current.emit("setRoom", hashRoom);

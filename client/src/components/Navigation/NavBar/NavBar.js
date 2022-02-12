@@ -36,7 +36,9 @@ const NavBar = () => {
   useEffect(() => {
     if (navShow && currentUser.id) {
       console.log("working");
-      socketRef.current = socketIOClient(SOCKET_SERVER_URL);
+      socketRef.current = socketIOClient(SOCKET_SERVER_URL, {
+        transports: ["websocket"],
+      });
       socketRef.current.emit("login", { userId: currentUser.id });
       socketRef.current.on("onlineUsers", (data) => {
         const onlineUsers = Object.entries(data);
