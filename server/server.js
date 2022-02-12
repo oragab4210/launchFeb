@@ -61,7 +61,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 /* ------------------------------- cors setup ------------------------------- */
 const corsOptions = {
-  origin: `${process.env.CLIENT_URL}:4000`,
+  // origin: `${process.env.CLIENT_URL}:4000`,
+  origin: `*`,
   credentials: true,
 };
 app.use(cors(corsOptions));
