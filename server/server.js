@@ -60,18 +60,18 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 /* ------------------------------- cors setup ------------------------------- */
-const corsOptions = {
-  // origin: `${process.env.CLIENT_URL}:4000`,
-  origin: `*`,
-  credentials: true,
-};
-app.use(cors(corsOptions));
-
+// const corsOptions = {
+//   // origin: `${process.env.CLIENT_URL}:4000`,
+//   origin: `*`,
+//   credentials: true,
+// };
+// app.use(cors(corsOptions));
+app.use(cors());
 /* ----------------------------- GraphQL Options ---------------------------- */
 
 app.use(express.json());
 app.use(
-  `${process.env.CLIENT_URL}:4000/graphql`,
+  "/graphql",
   graphqlHTTP({
     schema,
     graphiql: true,
