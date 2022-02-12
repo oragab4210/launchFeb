@@ -19,13 +19,11 @@ const path = require("path");
 const app = express();
 const server = http.createServer(app);
 const io = socketIO(server, {
-  cors: true,
-  // origins: [`${process.env.CLIENT_URL}:4000`],
   cors: {
-    origin: "*",
+    origin: `${process.env.CLIENT_URL}:4000`,
+    methods: ["GET", "POST"],
   },
 });
-io.origins("*:*");
 
 /* ------------------------------- Mongo Setup ------------------------------ */
 const MONGO_URI = process.env.MONGO_URI;
