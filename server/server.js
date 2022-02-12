@@ -20,7 +20,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIO(server, {
   cors: true,
-  origins: ["http://localhost:3000"],
+  origins: [`${process.env.CLIENT_URL}:4000`],
 });
 
 /* ------------------------------- Mongo Setup ------------------------------ */
@@ -58,7 +58,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 /* ------------------------------- cors setup ------------------------------- */
 const corsOptions = {
-  origin: process.env.CLIENT_URL,
+  origin: `${process.env.CLIENT_URL}:4000`,
   credentials: true,
 };
 app.use(cors(corsOptions));
