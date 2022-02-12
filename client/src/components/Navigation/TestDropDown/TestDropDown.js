@@ -16,9 +16,6 @@ import currentUserQuery from "../../../GQL/queries/CurrentUser";
 import mutation from "../../../GQL/mutations/Logout";
 import profile from "./profile.png";
 
-// import socketIOClient from "socket.io-client";
-// const SOCKET_SERVER_URL = "http://localhost:4000";
-
 const TestDropDown = ({ socketRef, socketIdFromNav }) => {
   let { loading, error, data, refetch } = useQuery(currentUserQuery);
   let [logout] = useMutation(mutation);

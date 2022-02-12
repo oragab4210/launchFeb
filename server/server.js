@@ -70,7 +70,7 @@ app.use(cors(corsOptions));
 
 app.use(express.json());
 app.use(
-  "/graphql",
+  `${process.env.CLIENT_URL}:4000/graphql`,
   graphqlHTTP({
     schema,
     graphiql: true,
